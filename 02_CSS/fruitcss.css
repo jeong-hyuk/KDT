@@ -1,0 +1,17 @@
+.fruit span:first-child {
+  color: red;
+}
+.fruit h3:last-child {
+  color: blue;
+}
+.fruit *:nth-child(2) {
+  background-color: yellow;
+}
+
+.fruit *:nth-child(2n) {
+  background-color: purple;
+}
+
+.fruit *:not(p) {
+  font-style: italic;
+}

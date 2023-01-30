@@ -1,0 +1,15 @@
+.zoo *:nth-child(2n) {
+  background-color: orange;
+}
+.zoo :first-child {
+  background-color: purple;
+}
+.zoo *:not(.predator) {
+  background-color: green;
+}
+.zoo :last-child:hover {
+  background-color: red;
+}
+.zoo *:nth-child(3) {
+  background-color: blue;
+}
