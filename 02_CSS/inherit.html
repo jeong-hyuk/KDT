@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./inheritcss.css" />
+    <title>Document</title>
+  </head>
+  <!-- 글자나 문자관련 속성들은 상속이 가능 상속이 불가하다면 inherit을 사용하여 상속 시켜야함 -->
+  <!-- 선택자 우선 순위 1순위 : 점수가 높은 선택자가 우선 2순위 : 점수가 같으면 마지막에 읽힌 선택자 -->
+  <!-- 전체 선택자 0점 -->
+  <!-- 태그 선택자 1점 -->
+  <!-- (가상)class 선택자 10점 합산의 개념이 아님 따로 측정-->
+  <!-- ID선택자 100점 -->
+  <!-- inline선언 1000점 -->
+  <!-- !important : 절대 못이김 -->
+
+  <body>
+    <ul class="list">
+      <li class="item">1</li>
+      <li>2</li>
+      <li>3</li>
+    </ul>
+    <div>4</div>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+/* .list {
+  background-color: orange;
+}
+
+#item {
+  background-color: skyblue;
+}
+
+li {
+  background-color: red;
+}
+* {
+  background-color: blue;
+} */
+
+.list li.item {
+  background-color: orange;
+}
+
+body .list li:first-child {
+  background-color: skyblue;
+}
