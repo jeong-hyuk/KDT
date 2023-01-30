@@ -1,0 +1,14 @@
+.orange {
+  color: orange;
+}
+
+span.orange {
+  background-color: skyblue;
+}
+
+ul > .orange {
+  background-color: blue;
+}
+div > .orange {
+  color: olive;
+}
