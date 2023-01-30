@@ -4,6 +4,6 @@
 [placeholder="이름"] {
   background-color: orange;
 }
-[value] {
+input:not([placeholder]) {
   background-color: blue;
 }
