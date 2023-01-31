@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 200px;
+        height: 200px;
+        background-color: green;
+        cursor: pointer;
+        display: inline-block;
+      }
+      .a {
+        background-color: orchid;
+        opacity: 1; /* 자리 그대로 속성 그대로*/
+      }
+      .b {
+        background-color: pink;
+        visibility: visible; /* 자리 그대로 속성 사라짐*/
+      }
+      .c {
+        background-color: skyblue;
+        display: inline-block; /* 자리 사라짐 속성 사라짐*/
+      }
+      .d {
+        background-color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="a">opacity</div>
+    <div class="b">visibility</div>
+    <div class="c">display</div>
+    <div class="d">last</div>
+  </body>
+</html>
