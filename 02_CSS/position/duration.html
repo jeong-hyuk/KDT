@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: orange;
+        transition-property: width, background-color; /*시간 함수에 영향을 받지 않고 넓이와 높이만 영향을 미침*/
+        transition-duration: 3s, 1s; /*hover 가 끝날때도 영향을 미침*/
+        /*transition-timing-function: ease-in-out; /*기본 값은 느리게 갔다가 빠르게 갔다가 느리게 간다 이건 일정하게 해준다 linear*/
+      }
+      div:hover {
+        width: 300px;
+        height: 100px;
+        background-color: blue; /*hover 가 끝나서는 영향을 미치지 않음*/
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>
