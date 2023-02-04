@@ -1,6 +1,4 @@
 /* COMMON */
-body {
-}
 a {
   text-decoration: none;
   color: #4a4a4a;
@@ -29,8 +27,7 @@ header .inner .header__logo a {
   font-family: "Indie Flower", cursive;
   color: green;
 }
-header .inner .header__logo a i {
-}
+
 /* 메뉴 파트 */
 header .inner .header__menu {
   display: flex;
@@ -44,8 +41,7 @@ header .inner .header__menu li {
   line-height: 32px;
   color: #4a4a4a;
 }
-header .inner .header__menu li a {
-}
+
 header .inner .header__menu li a:hover {
   color: #1dc078;
 }
