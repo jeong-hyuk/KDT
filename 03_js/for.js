@@ -36,9 +36,18 @@ function tri(a, b) {
 }
 console.log(tri(3, 4));
 
-function cir(a) {
+// function cir(a) {
+//   return Number((Math.PI * a ** 2).toFixed(2));
+// }
+
+// let cir = function (a) {
+//   return Number((Math.PI * a ** 2).toFixed(2));
+// };
+
+let cir = (a) => {
   return Number((Math.PI * a ** 2).toFixed(2));
-}
+};
+
 console.log(cir(3));
 
 function pytha(a, b) {
@@ -49,3 +58,20 @@ console.log(Math.sqrt(pytha(3, 4)));
 let days = ["월", "화", "수"];
 days.push("목");
 console.log(days);
+
+let sayHello = function () {
+  console.log("Hello");
+};
+sayHello();
+
+// function sum(num1, num2) {
+//   return num1 + num2;
+// }
+
+// let sum = function (num1, num2) {
+//   return num1 + num2;
+// };
+
+// let sum = (num1, num2) => {
+//   return num1 + num2;
+// };
