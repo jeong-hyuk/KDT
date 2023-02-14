@@ -4,26 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <script src="./DOM/querySelector.js"></script> -->
     <title>Document</title>
-    <style>
-      .orange {
-        background-color: orange;
-      }
-    </style>
   </head>
   <body>
-    <div class="box">box</div>
-    <div class="box">box2</div>
-    <div class="box" id="third">box3</div>
-
     <ul>
       <li>1</li>
-      <li>2</li>
+      <li class="list">2</li>
       <li>3</li>
       <li>4</li>
-      <li>5</li>
     </ul>
-    <script src="./DOM/classList.js"></script>
   </body>
+  <script>
+    const listEl = document.querySelector(".list");
+    console.log(listEl.parentNode);
+
+    const ulEl = document.querySelector("ul");
+    console.log(ulEl.childNodes);
+    console.log(ulEl.children);
+  </script>
 </html>

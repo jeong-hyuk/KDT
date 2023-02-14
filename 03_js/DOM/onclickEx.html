@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box1 {
+        font-size: 50px;
+      }
+      .active {
+        background-color: orange;
+      }
+      .deactive {
+        background-color: skyblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1">1</div>
+    <div class="box2" onclick="changeColor();">2</div>
+  </body>
+  <script>
+    const box1El = document.querySelector(".box1");
+    function colorClick() {
+      const activeClass = "active";
+      const deactiveClass = "deactive";
+      if (box1El.classList.contains(activeClass)) {
+        box1El.classList.add(deactiveClass);
+        box1El.classList.remove(activeClass);
+      } else {
+        box1El.classList.add(activeClass);
+        box1El.classList.remove(deactiveClass);
+      }
+    }
+    box1El.addEventListener("click", colorClick);
+
+    function changeColor() {
+      const box2El = document.querySelector(".box2");
+      const activeClass = "active";
+      const deactiveClass = "deactive";
+      if (box2El.classList.contains(activeClass)) {
+        box2El.classList.add(deactiveClass);
+        box2El.classList.remove(activeClass);
+      } else {
+        box2El.classList.add(activeClass);
+        box2El.classList.remove(deactiveClass);
+      }
+    }
+  </script>
+</html>
