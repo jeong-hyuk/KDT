@@ -1,3 +1,4 @@
+"use strict";
 class Shape {
   constructor(width, height) {
     this.width = width;
