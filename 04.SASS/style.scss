@@ -1,0 +1,90 @@
+@import "reset";
+@import "mixin";
+
+$body-bg: #eee;
+$wrap-border: #ddd;
+$wrap__item-bg: #fff;
+$wrap__item_h2: #333;
+$wrap__item_p: #777;
+$btn-bg: orange;
+$btn-font: white;
+$wrap__item-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+
+body {
+  background-color: $body-bg;
+}
+//main
+.wrap {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 100px;
+  border: 2px solid $wrap-border;
+  perspective: 600px;
+
+  &:hover {
+    .item {
+      transform: translateY(0px) rotateY(0deg);
+      opacity: 1;
+    }
+  }
+
+  .item {
+    width: 300px;
+    padding: 30px;
+    background-color: $wrap__item-bg;
+    margin: 50px;
+    border-radius: 10px;
+    box-shadow: $wrap__item-shadow;
+    transform: translateY(100px) rotateY(180deg);
+    transition: 0.6s;
+    opacity: 0;
+
+    // &:nth-child(1) {
+    //   transition: 0.1s;
+    // }
+
+    // &:nth-child(2) {
+    //   transition: 0.2s;
+    // }
+
+    // &:nth-child(3) {
+    //   transition: 0.3s;
+    // }
+
+    // &:nth-child(2) {
+    //   transition: 0.4s;
+    // }
+
+    // @for $i from 1 to 5 {
+    //   &:nth-child(#{$i}) {
+    //     transition-delay: $interval * $i;
+    //   }
+    // }
+
+    h2 {
+      font: bold 30px/1 "arial";
+      margin-bottom: 20px;
+      color: $wrap__item_h2;
+    }
+
+    p {
+      font: normal 16px/1.5 "arial";
+      color: $wrap__item_p;
+      justify-content: center;
+    }
+
+    $bgColors: (orange, hotpink, aqua, lightgreen);
+
+    $interval: 0.3s;
+    @each $el in $btn-bg-colors {
+      $index: index($btn-bg-colors, $el);
+      &:nth-child(#{$index}) {
+        transition-delay: $interval * $index;
+        a {
+          @include button($bg-color: $el);
+        }
+      }
+    }
+  }
+}
